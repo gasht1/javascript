@@ -13,3 +13,4 @@ array.unshift(1);
 //array.pop();
 //array.pop();
 console.log(array);
+console.log(array.length);
