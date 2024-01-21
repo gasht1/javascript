@@ -31,7 +31,12 @@ const array = [2, 34, 35, 36, 37, 38, 39];
 //});
 //console.log(ArrayMap);
 
-const ArrayFilter = array.filter(function (value, index) {
+/*const ArrayFilter = array.filter(function (value, index) {
   return value > 36;
 });
-console.log(ArrayFilter);
+console.log(ArrayFilter);*/
+const arrayReduce = array.reduce(function (accumulator, currentValue) {
+  //console.log(accumulator);
+  return accumulator + currentValue;
+}, 0);
+console.log(arrayReduce);
