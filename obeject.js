@@ -17,6 +17,10 @@ portfolio.name;
 portfolio.getRating;
 portfolio.setMethod = 6;
 console.log(portfolio.getRating);
+const website = {
+  _proto_: portfolio,
+};
+console.log(website._proto_.name);
 
 /*delete portfolio.rate;
 portfolio.expert = "front-end expert";
