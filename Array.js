@@ -19,7 +19,7 @@ array.push(1);
 console.log(`hello ${splice}`);
 const age = 19;
 age > 18 ? console.log("you can drive") : console.log("you can not drive");*/
-const array = [2, 34, 35, 36, 37, 38, 39];
+const array = [2, 34, 35, 36, 3, 37, 38, 39];
 //for (let i = 0; i < array.length; i++) {
 //console.log(array[i]);
 //array.forEach(function (value, index) {
@@ -35,8 +35,10 @@ const array = [2, 34, 35, 36, 37, 38, 39];
   return value > 36;
 });
 console.log(ArrayFilter);*/
-const arrayReduce = array.reduce(function (accumulator, currentValue) {
+/*const arrayReduce = array.reduce(function (accumulator, currentValue) {
   //console.log(accumulator);
   return accumulator + currentValue;
 }, 0);
-console.log(arrayReduce);
+console.log(arrayReduce);*/
+array.sort();
+console.log(array);
