@@ -25,8 +25,13 @@ const array = [2, 34, 35, 36, 37, 38, 39];
 //array.forEach(function (value, index) {
 // console.log(value, index);
 //});
-const ArrayMap = array.map(function (value, index) {
-  //console.log(value, index);
-  return value;
+//const ArrayMap = array.map(function (value, index) {
+//console.log(value, index);
+// return value + index;
+//});
+//console.log(ArrayMap);
+
+const ArrayFilter = array.filter(function (value, index) {
+  return value > 36;
 });
-console.log(ArrayMap);
+console.log(ArrayFilter);
