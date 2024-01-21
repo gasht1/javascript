@@ -7,3 +7,7 @@ delete portfolio.rate;
 portfolio.expert = "front-end expert";
 console.log(portfolio);
 console.log(portfolio["name"]);
+
+const obj = new Object();
+obj.name = "Gashaw Dreamer";
+console.log(obj);
