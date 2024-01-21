@@ -20,6 +20,13 @@ console.log(`hello ${splice}`);
 const age = 19;
 age > 18 ? console.log("you can drive") : console.log("you can not drive");*/
 const array = [2, 34, 35, 36, 37, 38, 39];
-for (let i = 0; i < array.length; i++) {
-  console.log(array[i]);
-}
+//for (let i = 0; i < array.length; i++) {
+//console.log(array[i]);
+//array.forEach(function (value, index) {
+// console.log(value, index);
+//});
+const ArrayMap = array.map(function (value, index) {
+  //console.log(value, index);
+  return value;
+});
+console.log(ArrayMap);
