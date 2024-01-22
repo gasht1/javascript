@@ -30,7 +30,14 @@ console.log(portfolio["name"]);
 const obj = new Object();
 obj.name = "Gashaw Dreamer";
 console.log(obj);*/
-const promise = new Promise(function (resolve, reject) {
+/*const promise = new Promise(function (resolve, reject) {
   //resolve();
 });
-console.log(promise);
+console.log(promise);*/
+async function tester() {
+  const value = await new Promise((resolve, reject) =>
+    setTimeout(() => resolve(3), 1000)
+  );
+  console.log(value);
+}
+tester();
