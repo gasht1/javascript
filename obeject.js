@@ -42,11 +42,22 @@ console.log(promise);*/
 }
 tester();*/
 
-const myFunction = (gashaw) => {
-  const me = callFunction(gashaw);
-  console.log("yes yuo call me");
-  gashaw();
+const stocks = {
+  firuts: ["banana", "papaya", "apple"],
 };
 
-const callFunction = () => {};
-myFunction(callFunction);
+//console.log(stocks.firuts[0]);
+const order = (friutName, productionStyle) => {
+  setTimeout(() => {
+    console.log(`${stocks.firuts[friutName]}`);
+  }, 4000);
+  productionStyle();
+};
+
+const production = () => {
+  setTimeout(() => {
+    console.log("production is selected");
+  }, 0);
+};
+
+order(1, production);
