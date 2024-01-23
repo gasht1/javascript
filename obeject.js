@@ -34,10 +34,19 @@ console.log(obj);*/
   //resolve();
 });
 console.log(promise);*/
-async function tester() {
+/*async function tester() {
   const value = await new Promise((resolve, reject) =>
     setTimeout(() => resolve(3), 1000)
   );
   console.log(value);
 }
-tester();
+tester();*/
+
+const myFunction = (gashaw) => {
+  const me = callFunction(gashaw);
+  console.log("yes yuo call me");
+  gashaw();
+};
+
+const callFunction = () => {};
+myFunction(callFunction);
