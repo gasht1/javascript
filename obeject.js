@@ -65,10 +65,10 @@ const stocks = {
 };
 const isShopping_open = true;
 let order = (time, work) => {
-  return new Promise((order, reject) => {
+  return new Promise((resolve, reject) => {
     if (isShopping_open) {
       setTimeout(() => {
-        order(work());
+        resolve(work());
       }, time);
     } else {
       reject(console.log("shop is closed"));
