@@ -42,12 +42,8 @@ console.log(promise);*/
 }
 tester();*/
 
-const stocks = {
-  firuts: ["banana", "papaya", "apple"],
-};
-
 //console.log(stocks.firuts[0]);
-const order = (friutName, productionStyle) => {
+/*const order = (friutName, productionStyle) => {
   setTimeout(() => {
     console.log(`${stocks.firuts[friutName]}`);
   }, 4000);
@@ -60,4 +56,23 @@ const production = () => {
   }, 0);
 };
 
-order(1, production);
+order(1, production);*/
+
+const stocks = {
+  fruits: ["banana", "papaya", "apple"],
+  liquids: ["water", "ice"],
+  holders: ["cone", "cup", "stick "],
+};
+const isShopping_open = true;
+let order = (time, work) => {
+  return new Promise((resolve, reject) => {
+    if (isShopping_open) {
+      setTimeout(() => {
+        resolve(work());
+      }, time);
+    } else {
+      reject(console.log("shop is closed"));
+    }
+  });
+};
+order(2000, () => console.log(`${stocks.fruits[0]} was selected`));
