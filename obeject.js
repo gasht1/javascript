@@ -75,4 +75,33 @@ let order = (time, work) => {
     }
   });
 };
-order(2000, () => console.log(`${stocks.fruits[0]} was selected`));
+order(2000, () => console.log(`${stocks.fruits[0]} was selected`))
+  .then(() => {
+    console.log("production has started");
+  })
+
+  .then(() => {
+    console.log("the fruit was chopped");
+  })
+
+  .then(() => {
+    console.log("the fruit was chopped");
+  })
+
+  .then(() => {
+    console.log(`${stocks.liquids[0]} and ${stocks.liquids[1]} was selected`);
+  })
+
+  .then(() => {
+    console.log("starting the machine");
+  })
+
+  .then(() => {
+    console.log(` ice cream placed on${stocks.holders[0]}  `);
+  })
+  .then(() => {
+    console.log("checolate was selected");
+  })
+  .then(() => {
+    console.log("ice cream was selected");
+  });
