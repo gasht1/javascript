@@ -77,11 +77,11 @@ let order = (time, work) => {
 };
 order(2000, () => console.log(`${stocks.fruits[0]} was selected`))
   .then(() => {
-    console.log("production has started");
+    return order(2000, () => console.log("production has started"));
   })
 
   .then(() => {
-    console.log("the fruit was chopped");
+    return order(4000, () => console.log("the fruit was chopped"));
   })
 
   .then(() => {
