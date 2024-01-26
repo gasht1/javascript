@@ -63,7 +63,7 @@ const stocks = {
   liquids: ["water", "ice"],
   holders: ["cone", "cup", "stick "],
 };
-const isShopping_open = false;
+const isShopping_open = true;
 let order = (time, work) => {
   return new Promise((resolve, reject) => {
     if (isShopping_open) {
