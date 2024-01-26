@@ -63,7 +63,7 @@ const stocks = {
   liquids: ["water", "ice"],
   holders: ["cone", "cup", "stick "],
 };
-const isShopping_open = true;
+const isShopping_open = false;
 let order = (time, work) => {
   return new Promise((resolve, reject) => {
     if (isShopping_open) {
@@ -104,4 +104,8 @@ order(2000, () => console.log(`${stocks.fruits[0]} was selected`))
   })
   .then(() => {
     console.log("ice cream was selected");
+  })
+
+  .catch(() => {
+    console.log("customer is left");
   });
